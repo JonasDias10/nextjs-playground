@@ -107,7 +107,9 @@ export const home = {
     description:
       "Have questions or want to learn more? Reach out and our team will get back to you as soon as possible.",
     emailLabel: "Your Email",
+    emailPlaceholder: "example@mail.com",
     messageLabel: "Your Message",
+    messagePlaceholder: "Write your message here...",
     button: "Send Message",
   },
 };

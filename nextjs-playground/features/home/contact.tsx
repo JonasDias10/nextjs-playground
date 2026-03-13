@@ -1,3 +1,4 @@
+import { Button } from "@/shared/components";
 import { home } from "./home";
 
 const sendContact = async (data: FormData): Promise<void> => {
@@ -10,7 +11,15 @@ const sendContact = async (data: FormData): Promise<void> => {
 };
 
 export function Contact() {
-  const { title, description, emailLabel, messageLabel, button } = home.contact;
+  const {
+    title,
+    description,
+    emailLabel,
+    messageLabel,
+    emailPlaceholder,
+    messagePlaceholder,
+    button,
+  } = home.contact;
 
   return (
     <section id="contact" className="relative">
@@ -36,8 +45,8 @@ export function Contact() {
             <input
               type="email"
               name="email"
-              placeholder="you@example.com"
-              className="w-full rounded-xl border border-white/20 bg-white/20 px-4 py-3 text-sm text-zinc-900 backdrop-blur-md outline-none transition focus:border-indigo-400 dark:text-white"
+              placeholder={emailPlaceholder}
+              className="w-full rounded-xl border border-white/20 bg-white/20 px-4 py-3 text-sm text-zinc-900 placeholder-zinc-500 backdrop-blur-md outline-none transition focus:border-indigo-400 dark:text-white dark:placeholder-zinc-400"
             />
           </div>
 
@@ -49,17 +58,14 @@ export function Contact() {
             <textarea
               rows={5}
               name="message"
-              placeholder="Write your message..."
-              className="w-full rounded-xl border border-white/20 bg-white/20 px-4 py-3 text-sm text-zinc-900 backdrop-blur-md outline-none transition focus:border-indigo-400 dark:text-white resize-none"
+              placeholder={messagePlaceholder}
+              className="w-full rounded-xl border border-white/20 bg-white/20 px-4 py-3 text-sm text-zinc-900 placeholder-zinc-500 backdrop-blur-md outline-none transition focus:border-indigo-400 dark:text-white dark:placeholder-zinc-400 resize-none"
             />
           </div>
 
-          <button
-            type="submit"
-            className="w-full rounded-xl bg-indigo-600 px-6 py-3 font-medium text-white transition-all duration-200 hover:scale-[1.02] hover:bg-indigo-500"
-          >
+          <Button color="primary" variant="contained" size="medium" fullWidth>
             {button}
-          </button>
+          </Button>
         </form>
       </div>
     </section>

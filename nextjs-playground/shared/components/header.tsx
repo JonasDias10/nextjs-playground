@@ -1,3 +1,5 @@
+import { Button } from "./button";
+
 export function Header() {
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-white/10 backdrop-blur-xl border-b border-white/20 shadow-md dark:bg-black/10">
@@ -37,9 +39,9 @@ export function Header() {
           >
             Contact
           </a>
-          <button className="ml-6 rounded-xl bg-purple-600 px-5 py-2 font-medium text-white hover:bg-purple-500">
+          <Button variant="contained" color="primary" size="small">
             Get Started
-          </button>
+          </Button>
         </nav>
 
         <div className="cursor-pointer text-zinc-900 dark:text-white md:hidden">

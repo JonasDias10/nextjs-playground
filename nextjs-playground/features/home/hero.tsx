@@ -35,11 +35,11 @@ export function Hero() {
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <Button variant="primary" size="medium">
+          <Button variant="contained" color="primary" size="medium">
             {primaryButton}
           </Button>
 
-          <Button variant="secondary" size="medium">
+          <Button variant="outlined" size="medium">
             {secondaryButton}
           </Button>
         </div>
