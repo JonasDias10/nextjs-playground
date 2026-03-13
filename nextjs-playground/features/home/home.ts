@@ -40,6 +40,7 @@ export const home = {
 
   pricing: {
     title: "Simple, Transparent Pricing",
+    mostPopular: "Most Popular",
     subtitle:
       "Choose the plan that fits your needs and start building without limits.",
     plans: [
@@ -97,32 +98,6 @@ export const home = {
           "One of the cleanest and most enjoyable developer experiences I've worked with.",
         author: "Daniel Carter",
         role: "Full Stack Developer",
-      },
-    ],
-  },
-
-  faq: {
-    title: "Frequently Asked Questions",
-    items: [
-      {
-        question: "What is this platform built for?",
-        answer:
-          "It is designed to help developers and teams create modern, visually stunning web interfaces with high performance and fluid interactions.",
-      },
-      {
-        question: "Do I need advanced frontend knowledge?",
-        answer:
-          "Not at all. The platform is built to be simple to use while still offering powerful customization for advanced developers.",
-      },
-      {
-        question: "Can I use it for commercial projects?",
-        answer:
-          "Yes. All paid plans allow you to use the platform in commercial and client projects.",
-      },
-      {
-        question: "Is it optimized for performance?",
-        answer:
-          "Absolutely. The architecture prioritizes fast loading times and smooth animations for the best user experience.",
       },
     ],
   },

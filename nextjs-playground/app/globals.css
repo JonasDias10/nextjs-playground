@@ -35,14 +35,14 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #366cb6;
+  background-color: #5c3cff;
   border-radius: 9999px;
   border: 2px solid transparent;
   background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #2660b1;
+  background-color: #3f1fff;
 }
 
 ::-webkit-scrollbar-track {
@@ -50,9 +50,9 @@ body {
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background-color: #0c4eaa;
+  background-color: #7b5cff;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background-color: #29528b;
+  background-color: #5c3cff;
 }

@@ -1,6 +1,5 @@
 import {
   Contact,
-  FAQ,
   Features,
   Hero,
   Pricing,
@@ -13,7 +12,7 @@ export default function Home() {
     <>
       <Header />
 
-      <main className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <main className="flex min-h-screen flex-col items-center justify-center gap-48 px-6 py-40 w-full max-w-7xl mx-auto">
         <Hero />
 
         <Features />
@@ -21,8 +20,6 @@ export default function Home() {
         <Pricing />
 
         <Testimonials />
-
-        <FAQ />
 
         <Contact />
       </main>
