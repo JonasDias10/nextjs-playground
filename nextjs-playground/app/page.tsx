@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Header />
 
-      <main className="flex min-h-screen flex-col items-center justify-center gap-48 px-6 py-40 w-full max-w-7xl mx-auto">
+      <main className="flex min-h-screen flex-col items-center justify-center gap-48 px-6 py-20 md:py-40 w-full max-w-7xl mx-auto">
         <Hero />
 
         <Features />
